@@ -3,54 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Donations</title>
+    <title>Crypto Addresses</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
-            padding: 20px;
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: #1e1e1e;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #121212, #1f1f1f);
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
         }
         h1 {
-            color: #ffa500;
+            font-size: 2.5rem;
+            margin-top: 20px;
         }
-        .crypto {
-            margin: 20px 0;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin: 30px 0;
         }
-        .address {
-            font-family: monospace;
-            background: #333;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-wrap: break-word;
+        .crypto-card {
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        .crypto-card img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+        .crypto-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .crypto-card p {
+            font-size: 0.95rem;
+            word-wrap: break-word;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        .crypto-card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
         }
     </style>
 </head>
 <body>
+    <h1>My Crypto Addresses</h1>
     <div class="container">
-        <h1>Support Us with Crypto</h1>
-        <div class="crypto">
-            <h3>Bitcoin</h3>
-            <div class="address">bc1qjs7rvyy9lxgxflfpqu040g9zp55w7crm2ngmc0</div>
+        <!-- Bitcoin -->
+        <div class="crypto-card">
+            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin Logo">
+            <h2>Bitcoin</h2>
+            <p>bc1qjs7rvyy9lxgxflfpqu040g9zp55w7crm2ngmc0</p>
         </div>
-        <div class="crypto">
-            <h3>Solana</h3>
-            <div class="address">By8KWfXQcshcgk6CBc6N5qaBakmBSnYXARXthe2hTwDQ</div>
+        <!-- Solana -->
+        <div class="crypto-card">
+            <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana Logo">
+            <h2>Solana</h2>
+            <p>By8KWfXQcshcgk6CBc6N5qaBakmBSnYXARXthe2hTwDQ</p>
         </div>
-        <div class="crypto">
-            <h3>Ethereum</h3>
-            <div class="address">0x4f603E927Ad650FF47FF678D35b57817EeEA3075</div>
+        <!-- Ethereum -->
+        <div class="crypto-card">
+            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum Logo">
+            <h2>Ethereum</h2>
+            <p>0x4f603E927Ad650FF47FF678D35b57817EeEA3075</p>
         </div>
     </div>
+    <footer>
+        © 2025 CryptoPage - Secure and Reliable
+    </footer>
 </body>
 </html>
